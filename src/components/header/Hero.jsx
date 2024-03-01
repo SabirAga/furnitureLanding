@@ -2,7 +2,7 @@ export const Hero = () => {
     return (
         <div>
             <div className="text-white text-center mt-40 font-questrial">
-                <div className="font-bold text-7xl flex flex-col gap-y-5">
+                <div className="text-5xl font-bold md:text-7xl md:flex md:flex-col gap-y-5">
                     <h1>Make Your Interior More</h1>
                     <h1>Minimalistic & Modern</h1>
                 </div>

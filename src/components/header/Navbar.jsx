@@ -7,6 +7,7 @@ export const Navbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen)
     }
 
+
     return (
         <>
             <div className="flex flex-row justify-between items-center font-questrial mx-20 pt-10 text-white ">

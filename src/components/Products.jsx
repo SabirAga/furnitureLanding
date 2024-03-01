@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const DUMMY_PRODUCTS = [
     {
         id: '1',
@@ -34,7 +36,18 @@ const DUMMY_PRODUCTS = [
 
 ]
 
+
 export const Products = () => {
+
+    const furnitures = [
+        { key: 'Chair', label: 'Chair' },
+        { key: 'Beds', label: 'Beds' },
+        { key: 'Sofa', label: 'Sofa' },
+        { key: 'Lamp', label: 'Lamp' },
+    ];
+
+    const [isActive, setIsActive] = useState('Chair')
+
     return (
         <div className="flex flex-col  items-center text-center font-questrial h-fit lg:h-[906px] bg-[#F7F7F7] pt-[50px]">
             <div className="pb-[32px]">
@@ -42,10 +55,13 @@ export const Products = () => {
             </div>
             <div >
                 <ul className="flex flex-row justify-center items-center gap-x-8 mt-6 text-lg border rounded-full w-[340px] bg-[#EEEEEE] h-[57px]">
-                    <li className="border rounded-full bg-white px-[19.5px] h-[45px]  py-[7px]"> <a href="#">Chair</a></li>
+                    {/* <li className="border rounded-full bg-white px-[19.5px] h-[45px]  py-[7px]"> <a href="#">Chair</a></li>
                     <li> <a href="#">Beds</a></li>
                     <li> <a href="#">Sofa</a></li>
-                    <li> <a href="#">Lamp</a></li>
+                    <li> <a href="#">Lamp</a></li> */}
+                    {furnitures.map((furniture) => {
+                        return (<li key={furniture.key} className={isActive===furniture.key && 'border rounded-full bg-white px-[19.5px] h-[45px]  py-[7px]'} onClick={()=>{ setIsActive(furniture.key) }}> <button href="">{furniture.label}</button></li>)
+                    })}
                 </ul>
             </div>
             <div className="pt-[80px] ">

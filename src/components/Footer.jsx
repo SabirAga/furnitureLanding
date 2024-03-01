@@ -1,13 +1,13 @@
 export const Footer = () => {
     return (
-        <div className="h-[420px] bg-[#2D2F33] font-questrial">
+        <div className="flex flex-col h-[420px] bg-[#2D2F33] font-questrial">
             <div className="grid grid-cols-4  p-10 lg:pt-[118px] lg:w-[1000px] lg:flex lg:justify-between lg:pl-[118px]">
                 <div className="h-[146px]  text-white">
                     <h1 className="font-bold text-4xl pb-7">Panto</h1>
                     <p className="w-[293px]">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
                 </div>
-                <div className="grid col-span-3 col-start-5 lg:flex">
-                    <div className="grid lg:pr-11">
+                <div className="flex relative right-[78px] gap-x-4 top-36 md:grid md:col-span-3 md:col-start-5 lg:flex">
+                    <div className="lg:pr-11">
                         <ul className=" lg:gap-y-[20px]">
                             <li className="text-[#E58411]">Services</li>
                             <li className="text-white"><a href="#">Email Marketing</a></li>
@@ -25,7 +25,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-around lg:flex lg:justify-between lg:px-[118px] pt-[75px]">
+            <div className="flex justify-around lg:flex lg:justify-between lg:px-[118px] px-4 pt-[100px] md:pt-[75px]">
                 <p className="text-white opacity-50">Copyright © 2021</p>
                 <div className="flex gap-10">
                     <p className="text-white">
